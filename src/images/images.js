@@ -1,19 +1,59 @@
 const images = [
     {
-        'id': 0001,
+        'id': 1,
         'categorieProduit': 'Telephone-Portable',
         'nomProduit': 'Samsung-Galaxy-S10e',
         'couleurProduit': 'Prisme-Bleu',
         'capaciteMemoire': '128GB',
         'nomImage': 'Samsung-Galaxy-S10e-Telephone-Portable-128GB-Prisme-Bleu.jpg',
         'imageUrl': '../images/Samsung-Galaxy-S10e-Telephone-Portable-128GB-Prisme-Bleu.jpg',
-        'description': ()=>{
-            return `
-                    Votre ${nomProduit} ${couleurProduit} avec ${capaciteMemoire} de mémoire intégrée; Vous bénéficiez d'un
-                    ${categorieProduit} de dernière génération. 
-            `
-        },
-        'détails': '',
+        'description': 'Samsung-Galaxy-S10e-Telephone-Portable-128GB-Prisme-Bleu',
+        'détails': 'Samsung-Galaxy-S10e-Telephone',
+    },
+    {
+        'id': 2,
+        'categorieProduit': 'samacommande',
+        'nomProduit': 'Caisse-Blanche',
+        'couleurProduit': 'blanche',
+        'capaciteMemoire': null,
+        'nomImage': 'Caisseblanche',
+        'imageUrl': '../images/caisseBlanc.jpg',
+        'description': 'Caisse blanche en carton imprimé',
+        'détails': 'caisseBlanche',
+    },
+
+    {
+        'id': 3,
+        'categorieProduit': 'Telephone-Portable',
+        'nomProduit': 'galaxyPliable.jpg',
+        'couleurProduit': 'blanche',
+        'capaciteMemoire': '16giga',
+        'nomImage': 'galaxyPliable',
+        'imageUrl': '../images/galaxyPliable.jpg',
+        'description': 'galaxyPliable.jpg',
+        'détails': 'galaxyPliable',
+    },
+    {
+        'id': 4,
+        'categorieProduit': 'samacommande',
+        'nomProduit': 'globeMonde.jpg',
+        'couleurProduit': 'blanche',
+        'capaciteMemoire': null,
+        'nomImage': 'globeMonde',
+        'imageUrl': '../images/globeMonde.jpg',
+        'description': 'galaxyPliable.jpg',
+        'détails': 'globeMonde samacommande',
+    },
+    {
+        'id': 5,
+        'categorieProduit': 'samacommande',
+        'nomProduit': 'gsourireLogo',
+        'couleurProduit': null,
+        'capaciteMemoire': null,
+        'nomImage': 'sourireLogo',
+        'imageUrl': '../images/sourireLogo.jpg',
+        'description': 'sourireLogo.jpg',
+        'détails': 'sourire Logo samacommande',
     }
 ]
 export default images;

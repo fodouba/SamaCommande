@@ -8,6 +8,7 @@ import Contactes from './Pages/Contacte/Contactes'
 
 
 function App() {
+  
   return (
     <div className="container-fluid">
       <NavbarPrincipale />

@@ -5,12 +5,15 @@ class Login extends Component {
         constructor(props){
              super(props)
              this.state = {
+
                  'identifiant': '',
                  'motDePasse': '',
                  'erreurs': {
                      'erreuridentifiant': '',
                      'erreurmoDePasse': ''
-                 }
+                 },
+                 'okLogin': 'false',
+                 
 
                 }
                 this.handleChange = this.handleChange.bind(this);
@@ -19,20 +22,23 @@ class Login extends Component {
             }
             handleChange = e =>{
                 const identifiant = (e.target.name);
-                this.state.identifiant = identifiant;
+                
                 
                   
             }
             handleClick = e => {
-                e.preventDefault();
                 console.log(`Vous avez cliqué sur ${e.target.name}`);
                
+            }
+            handlSubmit = e =>{
+                e.preventDefault();
+                console.log('Vous avez soumis un formulaire');
             }
             
         render() {
             return (
                 <div className="login1 mt-5 px-5 bg-success" style={{justifyContent: "center", alignContent: "center"}}>
-                <form className="Login" id="Login"  onSubmit={this.handlesubmit}>
+                <form className="Login" id="Login"  onSubmit={this.handlSubmit}>
                     <div className="form-items" id="login">
                         <label htmlFor="login1" >
                         <input 
