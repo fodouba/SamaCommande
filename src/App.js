@@ -8,9 +8,9 @@ import Contactes from './Pages/Contacte/Contactes'
 
 
 function App() {
-  
+
   return (
-    <div className="container-fluid">
+    <div className="container-fluid text-center">
       <NavbarPrincipale />
       <Switch>
         <Route exact path="/services">

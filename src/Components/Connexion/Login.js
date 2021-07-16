@@ -1,81 +1,53 @@
-import React, { Component } from 'react'
-import './login1.css'
+import React from 'react'
 
-class Login extends Component {
-        constructor(props){
-             super(props)
-             this.state = {
+const Login = () => {
+   
+    return (
+        <div id="connection" style={{paddingBlock: '25px', justifyContent: 'center', alignItems:'center', padding:'15px', marginTop:'10rem'}}>
+            <h2 style={{marginTop:'15px'}}>Connexion</h2>
+            <form id="form1">
 
-                 'identifiant': '',
-                 'motDePasse': '',
-                 'erreurs': {
-                     'erreuridentifiant': '',
-                     'erreurmoDePasse': ''
-                 },
-                 'okLogin': 'false',
-                 
+                <div className="entree" id="identif">
+                    <label htmlFor="Id">
+                    <input 
+                    type="text" 
+                    id="Id" 
+                    placeholder="Idendifiant" 
+                    name="identifiant" 
+                    className="form-control text-center mt-4" 
+                    required/>
+                    </label>
+                </div>
 
-                }
-                this.handleChange = this.handleChange.bind(this);
-                this.handleClick = this.handleChange.bind(this); 
-                
-            }
-            handleChange = e =>{
-                const identifiant = (e.target.name);
-                
-                
-                  
-            }
-            handleClick = e => {
-                console.log(`Vous avez cliqué sur ${e.target.name}`);
+                <div className="entree" id="passe">
+                    <label htmlFor="MdP">
+                    <input 
+                    type="password" 
+                    id="MdP" 
+                    name="MdP" 
+                    placeholder="Mot de passe" 
+                    className="form-control text-center my-3"  
+                    required/>
+                    </label>
+                </div>
+
+                <div className="entree text-center" id="checkbox">
+                    <input 
+                    type="checkbox" 
+                    name="chkbox" 
+                    id="chkbox" 
+                    className="chekbox mb-3 mt-2 m-2"  />
+                    <label htmlFor="chkbox">Se souvenir de moi</label>
                
-            }
-            handlSubmit = e =>{
-                e.preventDefault();
-                console.log('Vous avez soumis un formulaire');
-            }
-            
-        render() {
-            return (
-                <div className="login1 mt-5 px-5 bg-success" style={{justifyContent: "center", alignContent: "center"}}>
-                <form className="Login" id="Login"  onSubmit={this.handlSubmit}>
-                    <div className="form-items" id="login">
-                        <label htmlFor="login1" >
-                        <input 
-                              type="text" 
-                              name="login" 
-                              id="login1" 
-                              className="form-control mb-3"
-                              placeholder="Identifiant"
-                              onChange={this.handleChange}
-                              required
-                              />
-                        </label>
+                </div>
 
-                        <label htmlFor="mdp1">
-                        <input 
-                              type="password" 
-                              name="mdp" 
-                              id="mdp1" 
-                              placeholder="Mot de passe" 
-                              className="form-control mb-3"
-                              onChange={this.handleChange}
-                              required/>
-                        </label>
-
-
-                        <button 
-                               type="submit" 
-                               id="submit"
-                               className="btn-primary"
-                               >
-                            Se connecter
-                        </button>
-                    </div>
-                </form>
-            </div>
-        )
-    }
+                <button type="submit" id="submit" className="btn btn-primary">Valider</button>
+            </form>
+               <div className="compte mt-5">
+               <small className="container mt-5">Vous n'avez de compte?<em className="m-2"><a href="//#endregion" alt="Login" id="login" className="m-2">Créer un compte, c'est gratuit!</a></em></small>
+               </div>
+        </div>
+    )
 }
 
 export default Login
