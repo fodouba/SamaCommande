@@ -1,0 +1,14 @@
+.Nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-item>li{
+    text-decoration: none;
+    color: azure;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

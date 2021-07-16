@@ -1,0 +1,33 @@
+[
+    {
+        "id": "0001",
+        "categorieProduit": "Telephone-Portable",
+        "nomProduit": "Samsung-Galaxy-S10e",
+        "couleurProduit": "Prisme-Bleu",
+        "capaciteMemoire": "128GB",
+        "nomImage": "Samsung-Galaxy-S10e-Telephone-Portable-128GB-Prisme-Bleu.jpg",
+        "imageUrl": "../../public/images/Samsung-Galaxy-S10e-Telephone-Portable-128GB-Prisme-Bleu.jpg",
+       " détails": ""
+    },
+    {
+        "id": "0002",
+        "categorieProduit": "Telephone-Portable",
+        "nomProduit": "Samsung-galaxyPliable",
+        "couleurProduit": "Rose",
+        "capaciteMemoire": "8GB",
+        "nomImage": "galaxyPliable.jpg",
+        "imageUrl": "../../public/images/galaxyPliable.jpg",
+       " détails": ""
+    },
+    {
+        "id": "0003",
+        "categorieProduit": "Telephone-Portable",
+        "nomProduit": "Samsung-xcellePixi",
+        "couleurProduit": "Rose",
+        "capaciteMemoire": "1GB",
+        "nomImage": "xcellePixi.jpg",
+        "imageUrl": "../../public/images/xcellePixi.jpg",
+       " détails": ""
+    }
+    
+]
